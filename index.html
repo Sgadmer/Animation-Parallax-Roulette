@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Параллакс тест</title>
+    <title>Анимация - параллакс - рулетка</title>
     <link href="assets/styles/reset.css" rel="stylesheet">
     <link href="assets/styles/style.css" rel="stylesheet">
     
@@ -14,15 +14,13 @@
 
 <body>
 
-    <input id ="changeStatus">
+    <div id="checkBox">
+        <input type="checkbox" value="0">1 - Останоить всё</input>
+        <input type="checkbox" value="1">2 - Запустить шарики</input>
+        <input type="checkbox" value="2">3 - Запустить смену фона</input>
+    </div>
+       
 
-       <select>
-        <option value="0">0 - Останоить всё</option>
-        <option value="1">1 - Запустить шарики</option>
-        <option value="2">2 - Запустить смену фона</option>
-        <option value="3">3 - Запустить всё</option>
-       </select>
-    </input>
 
     <div id="circleBox">
 
@@ -42,7 +40,7 @@
 
 
 
-    <script src="scripts\script.js"></script>
+    <script src="scripts\circlesAnim.js"></script>
 </body>
 
 
