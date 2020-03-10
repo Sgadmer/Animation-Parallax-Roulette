@@ -1,13 +1,24 @@
-
-#circleBox{
+body{
     max-width: 1920px;
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 
+#circleBox{
+    width: 1920px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+
+}
+
+#checkBox{
+    display: flex;
+    justify-content: center;
+}
 
 #circle1{
     background-color:red;
