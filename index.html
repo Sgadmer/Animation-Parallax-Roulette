@@ -2,45 +2,56 @@
 <html lang="ru">
 
 <head>
-
     <meta charset="UTF-8">
     <title>Анимация - параллакс - рулетка</title>
     <link href="assets/styles/reset.css" rel="stylesheet">
-    <link href="assets/styles/style.css" rel="stylesheet">
-    
-
+    <link href="assets/styles/style_animation.css" rel="stylesheet">
+    <link href="assets/styles/style_parallax.css" rel="stylesheet">
 </head>
 
 
 <body>
 
-    <div id="checkBox">
-        <input type="checkbox" value="0">1 - Останоить всё</input>
-        <input type="checkbox" value="1">2 - Запустить шарики</input>
-        <input type="checkbox" value="2">3 - Запустить смену фона</input>
-    </div>
+    <p>Circle animation</p>
+    <div id="animation_div">
        
-
-
-    <div id="circleBox">
-
-        <div id="circle1">
+        <div id="checkBox">
+            <input type="checkbox" value="0">1 - Останоить всё</input>
+            <input type="checkbox" value="1">2 - Запустить шарики</input>
+            <input type="checkbox" value="2">3 - Запустить смену фона</input>
         </div>
 
-        <div id="circle2">
-        </div>
 
-        <div id="circle3">
-        </div>
 
-        <div id="circle4">
-        </div>
+        <div id="circleBox">
 
+            <div id="circle1">
+            </div>
+
+            <div id="circle2">
+            </div>
+
+            <div id="circle3">
+            </div>
+
+            <div id="circle4">
+            </div>
+
+        </div>
     </div>
 
+    <p>PARALLAX1 (Mouse)</p>
+    <div id="parallax_div">
+        <div id="first_parallax">
+            <div id="parallax-background"></div>
+            <img id="parallax-petal" src="assets/pictures/parallax-witcher/cherry_petal.png">
+            <img id="parallax-ciri" src="assets/pictures/parallax-witcher/ciri.png">
+        </div>
+    </div>
 
 
     <script src="scripts\circlesAnim.js"></script>
+    <script src="scripts\parallax.js"></script>
 </body>
 
 

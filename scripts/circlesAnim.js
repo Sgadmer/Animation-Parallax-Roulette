@@ -50,7 +50,6 @@ function toChangeStatus(event) {
         });
        
         return;
-        
     }
 
     if (i < 2) {

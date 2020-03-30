@@ -1,0 +1,35 @@
+#first_parallax{
+  width: 80%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 45%;
+  overflow: hidden;
+  min-height: 600px;
+  border: 2px solid black;
+}
+
+#parallax-background{
+    position: absolute;
+    z-index: 1;
+    background: url("../pictures/parallax-witcher/cherry_garden.png") no-repeat;
+    background-size: cover;
+    width: 120%;
+    height: 80%;
+    left: -10;
+    
+}
+#parallax-petal{
+    position: absolute;
+    width: 1600px;
+    height: 80%;
+    filter: grayscale(100%);
+    z-index: 2;
+}
+#parallax-ciri{
+    position: absolute;
+    z-index: 3;
+    bottom: -35px;
+    right:0 ;
+    padding: 1rem;
+}

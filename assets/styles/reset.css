@@ -22,3 +22,8 @@ time, mark, audio, video {
 body {
 	margin: 0 auto;
 }
+
+p{
+	font-size: 100px;
+	text-align: center;
+}
