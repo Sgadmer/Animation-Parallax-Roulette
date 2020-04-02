@@ -1,15 +1,17 @@
-#first_parallax{
-  width: 80%;
-  max-width: 1920px;
-  margin: 0 auto;
-  position: relative;
-  padding-bottom: 45%;
-  overflow: hidden;
-  min-height: 600px;
-  border: 2px solid black;
+
+#first_parallax {
+    width: 80%;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 45%;
+    overflow: hidden;
+    min-height: 600px;
+    border: 2px solid black;
+    margin-bottom: 20px;
 }
 
-#parallax-background{
+#parallax-background {
     position: absolute;
     z-index: 1;
     background: url("../pictures/parallax-witcher/cherry_garden.png") no-repeat;
@@ -17,19 +19,95 @@
     width: 120%;
     height: 80%;
     left: -10;
-    
+    top: -10px;
 }
-#parallax-petal{
+
+#parallax-petal {
     position: absolute;
     width: 1600px;
     height: 80%;
     filter: grayscale(100%);
     z-index: 2;
 }
-#parallax-ciri{
+
+#parallax-ciri {
     position: absolute;
     z-index: 3;
     bottom: -35px;
-    right:0 ;
+    right: 0;
     padding: 1rem;
 }
+
+
+/* FIREWATCH PARALLAX*/
+#P_second_parallax{
+    padding-top: 200px;
+    color: blanchedalmond;
+}
+
+
+.second_parallax,
+.parallax__layer {
+  height: 1000px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.second_parallax{
+    position: relative;
+    max-height: 1000px;
+    z-index: -1;
+}
+
+.parallax__layer{
+    position: fixed;
+    background-position: bottom center;
+    background-size: auto 1038px;
+    background-repeat: repeat-x;
+    width: 100%;
+    z-index: 10;
+}
+
+.maincontent {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    z-index: 99;
+    background-color: #210002;
+  }
+
+
+  #parallax-0 {
+    background-image: url(../pictures/parallax-firewatch/layer0.png);
+    background-color: #ffaf1b;
+  }
+
+  #parallax-1 {
+    background-image: url(../pictures/parallax-firewatch/layer1.png);
+  }
+  #parallax-2 {
+    background-image: url(../pictures/parallax-firewatch/layer2.png);
+  }
+  #parallax-3 {
+    background-image: url(../pictures/parallax-firewatch/layer3.png);
+  }
+  #parallax-4 {
+    background-image: url(../pictures/parallax-firewatch/layer4.png);
+  }
+  #parallax-5 {
+    background-image: url(../pictures/parallax-firewatch/layer5.png);
+  }
+  #parallax-6 {
+    background-image: url(../pictures/parallax-firewatch/layer6.png);
+  }
+  #parallax-7 {
+    background-image: url(../pictures/parallax-firewatch/layer7.png);
+  }
+  #parallax-8 {
+    background-image: url(../pictures/parallax-firewatch/layer8.png);
+  }
+
+  #hideSecondParallaxLayers{
+      background-color: white;
+      height:  270vh;
+  }

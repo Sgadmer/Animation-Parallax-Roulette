@@ -15,7 +15,7 @@ function getMousePos(xRef, yRef) {
 }
 
 parallax_div.addEventListener("mousemove", function (e) {
-    if (e.tagName="parallax_div") {
+    if (e.tagName = "parallax_div") {
         let mousePos = getMousePos(e.clientX, e.clientY),
             distX = mousePos.x - ciriCenterX,
             distY = mousePos.y - ciriCenterY;
@@ -28,6 +28,26 @@ parallax_div.addEventListener("mousemove", function (e) {
     }
 })
 
-function paralax1_mouse (e){
 
-}
+/* ROCKET PARALLAX*/
+
+secPar = document.querySelector('.second_parallax');
+window.addEventListener('scroll', function (event){
+    console.log(window.pageYOffset);
+    console.log(secPar.getBoundingClientRect().top);
+    console.log(this.pageYOffset);
+    console.log(`----`);
+
+   
+        let layers = document.querySelectorAll('.parallax__layer');
+        let top = this.pageYOffset;
+        let speed, yPos;
+        layers.forEach(function(layer){
+            speed = layer.getAttribute("data-speed")
+            yPos = -(top * speed / 100);
+            layer.setAttribute('style','transform: translate3d(0px, ' + yPos + 'px, 0px)')
+        })
+
+    
+});
+
