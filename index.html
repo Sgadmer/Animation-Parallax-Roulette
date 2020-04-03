@@ -7,6 +7,7 @@
     <link href="assets/styles/reset.css" rel="stylesheet">
     <link href="assets/styles/style_animation.css" rel="stylesheet">
     <link href="assets/styles/style_parallax.css" rel="stylesheet">
+    <link href="assets/styles/3dCards.css" rel="stylesheet">
 </head>
 
 
@@ -22,57 +23,99 @@
         <div class="parallax__layer" id="parallax-6" data-speed="49"></div>
         <div class="parallax__layer" id="parallax-7" data-speed="69"></div>
         <div class="parallax__layer" id="parallax-8" data-speed="100"></div>
-      </div>
-      <div class="maincontent">
+    </div>
+    <div class="maincontent">
         <p id="P_second_parallax">PARALLAX2 (Scroll)</p>
-      </div>
-
-<div id ="hideSecondParallaxLayers">
-
-    <div id="parallax_div">
-        <p>PARALLAX1 (Mousemove)</p>
-        <div id="first_parallax">
-            <div id="parallax-background"></div>
-            <img id="parallax-petal" src="assets/pictures/parallax-witcher/cherry_petal.png">
-            <img id="parallax-ciri" src="assets/pictures/parallax-witcher/ciri.png">
-        </div>
-
-    <p>Circle animation (Без использования "Animation" css)</p>
-    <div id="animation_div">
-
-        <div id="checkBox">
-            <input type="checkbox" value="0">1 - Останоить всё</input>
-            <input type="checkbox" value="1">2 - Запустить шарики</input>
-            <input type="checkbox" value="2">3 - Запустить смену фона</input>
-        </div>
-
-
-
-        <div id="circleBox">
-
-            <div id="circle1">
-            </div>
-
-            <div id="circle2">
-            </div>
-
-            <div id="circle3">
-            </div>
-
-            <div id="circle4">
-            </div>
-
-        </div>
+    </div>
     </div>
 
+    <div id="hideSecondParallaxLayers">
 
-    
+        <div id="parallax_div">
+            <p> PARALLAX1 (Mousemove)</p>
+            <div id="first_parallax">
+                <div id="parallax-background"></div>
+                <img id="parallax-petal" src="assets/pictures/parallax-witcher/cherry_petal.png">
+                <img id="parallax-ciri" src="assets/pictures/parallax-witcher/ciri.png">
+            </div>
 
+            <p>Circle animation (Без использования "Animation" css)</p>
+            <div id="animation_div">
+
+                <div id="checkBox">
+                    <input type="checkbox" value="0">1 - Останоить всё</input>
+                    <input type="checkbox" value="1">2 - Запустить шарики</input>
+                    <input type="checkbox" value="2">3 - Запустить смену фона</input>
+                </div>
+
+
+                <div id="circleBox">
+
+                    <div id="circle1">
+                    </div>
+
+                    <div id="circle2">
+                    </div>
+
+                    <div id="circle3">
+                    </div>
+
+                    <div id="circle4">
+                    </div>
+
+                </div>
+            </div>
+
+            <p>3d Cards</p>
+            <p>Просто наведи курсор!</p>
+            <div class="wrap">
+                <div class="card">
+                    <div class="front">1</div>
+                    <div class="back" id="back1"></div>
+                </div>
+                <div class="card">
+                    <div class="front">2</div>
+                    <div class="back" id="back2"></div>
+                </div>
+                <div class="card">
+                    <div class="front">3</div>
+                    <div class="back" id="back3"></div>
+                </div>
+                <div class="card">
+                    <div class="front">4</div>
+                    <div class="back" id="back4"></div>
+                </div>
+                <div class="card">
+                    <div class="front">5</div>
+                    <div class="back" id="back5"></div>
+                </div>
+                <div class="card">
+                    <div class="front">6</div>
+                    <div class="back" id="back6"></div>
+                </div>
+                <div class="card">
+                    <div class="front">7</div>
+                    <div class="back" id="back7"></div>
+                </div>
+                <div class="card">
+                    <div class="front">8</div>
+                    <div class="back" id="back8"></div>
+                </div>
+            </div>
+
+            <p>Блок с "адаптивной версткой"</p>
+            <div class="section">
+                <div class="phone">PHONE</div>
+                <div class="tablet">TABLET</div>
+                <div class="desctop">DESCTOP</div>
+                <h1 class="headling">Адаптивная вёрстка</h1>
+            </div>
+        </div>
     </div>
-
-
     <script src="scripts\circlesAnim.js"></script>
     <script src="scripts\parallax.js"></script>
+    <script src="scripts\3dCards.js"></script>
+
 </body>
 
 

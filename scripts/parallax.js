@@ -29,15 +29,10 @@ parallax_div.addEventListener("mousemove", function (e) {
 })
 
 
-/* ROCKET PARALLAX*/
+/* FIREWATCH PARALLAX*/
 
 secPar = document.querySelector('.second_parallax');
 window.addEventListener('scroll', function (event){
-    console.log(window.pageYOffset);
-    console.log(secPar.getBoundingClientRect().top);
-    console.log(this.pageYOffset);
-    console.log(`----`);
-
    
         let layers = document.querySelectorAll('.parallax__layer');
         let top = this.pageYOffset;
