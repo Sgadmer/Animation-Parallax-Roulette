@@ -123,7 +123,7 @@ body{
 .section:hover .phone,
 .section:hover .tablet,
 .section:hover .desctop{
-    transform: translateY(10px) rotateY(-15deg);
+    transform: translateY(10%) rotateY(-15deg) rotateZ(5deg);
 }
 
 .phone,
@@ -133,7 +133,7 @@ body{
     position: absolute;
     box-shadow: 13px 13px 32px 0 #1f57cf;
     transition: 1s;
-    transform: translateY(100%);
+    transform: translateY(100%) ;
 }
 .phone{
     width: 200px;
@@ -161,4 +161,54 @@ body{
     bottom: 0;
     left: 15%;
     transition-delay: .6s;
+}
+
+/*Transform 3D card portfolio*/
+
+.section1{
+    background-color: #39f296;
+    height: 100vh;
+    color: black;
+    font-size: xx-large;
+    overflow: hidden;
+    position: relative;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1{
+    width: 680px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform:rotateX(55deg) rotateZ(-45deg) rotateY(10deg);
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.card1{
+    width: 200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    perspective: 1000px;
+    background-color: #fff;
+    border: 3px solid black;
+    transition: 0.3s;
+}
+
+.card1:hover{
+    cursor: pointer;
+    transform: translateZ(10px);
+}
+
+.container_origin{
+    transform: rotate(0);
 }
