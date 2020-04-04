@@ -1,0 +1,118 @@
+.section2{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: plum;
+}
+
+.section_burger_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.burger_menu_btn{
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 99;
+
+}
+
+.burger_menu_btn span::before,
+.burger_menu_btn span::after,
+.burger_menu_btn span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 2px;
+    margin-top: -1px;
+    margin-left: -20px;
+    background-color: black;
+    display: block;
+    transition: .2s;
+
+}
+
+.burger_menu_btn span::before,
+.burger_menu_btn span::after{
+    content: "";
+}
+
+.burger_menu_btn span::before{
+    transform: translateY(-5px);
+}
+
+.burger_menu_btn span::after{
+    transform: translateY(5px);
+}
+
+.menu-btn_active span::before{
+    transform: rotate(45deg);
+}
+
+.menu-btn_active span::after{
+    transform: rotate(-45deg);
+}
+
+.menu-btn_active span{
+    height: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.fas{
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    transition: .2s;
+    position: absolute;
+    left: calc(50% - 15px);
+    bottom: calc(50% - 15px);
+    z-index: 0;
+}
+
+.menu a {
+    background-color: white;
+}
+
+.steam{
+    background: url(../pictures/burger_menu_icons/steam.png) no-repeat;
+    background-size: cover;
+}
+
+.play_market{
+    background: url(../pictures/burger_menu_icons/play_market.png);
+    background-size: cover;
+}
+
+.blizzard{
+    background: url(../pictures/burger_menu_icons/blizzard.png);
+    background-size: cover;
+}
+
+.menu_active a:nth-child(1){
+    transform: translate(200%, 0);
+}
+
+.menu_active a:nth-child(2){
+    transform: translate(150%, 150%);
+}
+
+.menu_active a:nth-child(3){
+    transform: translate(0, 200%);
+}
+
